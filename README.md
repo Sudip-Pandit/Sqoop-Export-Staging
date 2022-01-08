@@ -68,4 +68,5 @@ mysql
 
 
 select * from customermoda_stg;
+
 select * from customermode;
