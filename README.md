@@ -34,8 +34,10 @@ This repository gives an idea about Sqoop export staging  through a project.
 
      6,61,2015-09-24
 
+==============================================
+# Go to the HDFS and run the following command
 
-# hadoop fs -put exdata /user/cloudera/
+     hadoop fs -put exdata /user/cloudera/
 
 # Go to Mysql
 
