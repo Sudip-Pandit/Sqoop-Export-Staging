@@ -15,9 +15,11 @@ This repository gives an idea about Sqoop export staging  through a project.
 # Sqoop Staging 
 
 # Edge Node
-===
-Login to Edge Node
-===
+     
+     Go to the edge node
+     Login to Edge Node
+==========================================
+     
      vi or nano exdata
 
      1,Arun,2015-09-20
@@ -32,23 +34,18 @@ Login to Edge Node
 
      6,61,2015-09-24
 
-===
-hadoop fs -put exdata /user/cloudera/
-===
 
-=======
-Mysql
-=======
+# hadoop fs -put exdata /user/cloudera/
+
+# Go to Mysql
 
      create database stg;
      use stg;
      CREATE TABLE customermoda(custid INT,firstname VARCHAR(20),lastname VARCHAR(20));
      CREATE TABLE customermoda_stg(custid INT,firstname VARCHAR(20),lastname VARCHAR(20));
 
+# Go to the Edge Node
 
-===
-Edge Node
-===
      sqoop export \
      --connect jdbc:mysql://localhost/stg \
      --username root --password <> \
@@ -58,9 +55,9 @@ Edge Node
      --table customermoda \
      --export-dir /user/cloudera/exdata
 
-===
-mysql
-===
+
+# Go to the mysql and perform those two queries
+
      select * from customermoda_stg;
 
      select * from customermode;
