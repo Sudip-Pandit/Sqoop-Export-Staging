@@ -3,13 +3,13 @@ This repository gives an idea about Sqoop export staging  through a project.
 
 # Export can optionally use staging area.
 
-  ^ After populating the staging table, data goes to the target table in Relational DB.
+  ^After populating the staging table, data goes to the target table in Relational DB.
 
-  % It is a good practice in prevention of Sqoop job in case of job failure.
+  %It is a good practice in prevention of Sqoop job in case of job failure.
 
-  ! It acts as a insuation to prevent the target from data loss in job failure.
+  !It acts as a insuation to prevent the target from data loss in job failure.
 
-  $ It is a optional technique, where map tasks populate staging table and each map write is broken down into many transactions.
+  $It is a optional technique, where map tasks populate staging table and each map write is broken down into many transactions.
 
 
 ======Sqoop Staging ======
